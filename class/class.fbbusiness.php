@@ -17,11 +17,11 @@ class fbBusinessManager extends dbFbManager
 
 	//Genera un nuevo token por cada nueva solicitud
 	function genToken(){
-		return 'access_token=CAAC1cbZCZBnUUBAGf5bf3horRKiVgcpO2VTOxcZAeyljDFrbza0E5Dyh9tZC8FVzfBWqSpfN3PPjGSa9KZCgZAUTw2inQDeVqGQKpwDfFZAalirG8I82CzCQBlBwCFL6ZB1upB1H2iMZBcT2rpjfhsZATtzU74qk3RDlTVMmcacKDuNxkZCkKHV79AaClgslVhL10sZD';
+		return 'access_token=coloque su token de acceso a facebook aqui';
 	}
 	//Realiza el request dado un token y un nueva url 
 	function app_request ($url="") {
-		$proxy="172.16.224.4:8080";
+		$proxy="si tiene proxy coloquelo";
 	    $curl = curl_init($url);
 	    curl_setopt($curl, CURLOPT_PROXY, $proxy);
 	    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
